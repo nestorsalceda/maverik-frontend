@@ -13,8 +13,6 @@ import { LightsService, HttpClient } from 'maverik-core'
 
 const service = new LightsService(new HttpClient())
 
-console.log(service)
-
 const TURN_ON_MESSAGE = 'Turn On'
 const TURN_OFF_MESSAGE = 'Turn Off'
 
