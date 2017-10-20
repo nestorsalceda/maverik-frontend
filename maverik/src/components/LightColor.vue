@@ -1,7 +1,7 @@
 <template>
   <div class="light-color">
     <b-card header="Light Color" class="text-center">
-      <b-form-input type="color"></b-form-input>
+      <b-form-input size="lg" type="color"></b-form-input>
     </b-card>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-container>
+    <b-container class="main">
       <LightSwitch/>
       <LightColor/>
     </b-container>
@@ -25,7 +25,26 @@ export default {
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: $gray-100;
 }
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: ". a .";
+}
+
+.main {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+}
+
 </style>
