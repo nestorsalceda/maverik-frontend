@@ -11,8 +11,6 @@ import { LightsService, HttpClient } from 'maverik-core'
 
 const service = new LightsService(new HttpClient())
 
-console.log(service)
-
 export default {
   name: 'LightColor',
   data () {
