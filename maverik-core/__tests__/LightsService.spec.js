@@ -20,4 +20,10 @@ describe("LightsService", () => {
 
     expect(spy).toHaveBeenCalledWith('http://maverik:4567/disable')
   });
+
+  it("sends color for led stripe", () => {
+    service.color('FFAACC')
+
+    expect(spy).toHaveBeenCalledWith('http://maverik:4567/rgb/FFAACC')
+  });
 });

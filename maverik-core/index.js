@@ -18,6 +18,10 @@ class LightsService {
   async turnOff() {
     this._httpClient.post('http://maverik:4567/disable')
   }
+
+  async color(color) {
+    this._httpClient.post(`http://maverik:4567/rgb/${color}`)
+  }
 }
 
 exports.HttpClient = HttpClient
