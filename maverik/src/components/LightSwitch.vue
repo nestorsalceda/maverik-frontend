@@ -21,7 +21,7 @@ export default {
   data () {
     return {
       turnedOn: false,
-      message: 'Turn On'
+      message: TURN_ON_MESSAGE
     }
   },
   methods: {
