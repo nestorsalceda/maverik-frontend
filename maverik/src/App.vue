@@ -36,9 +36,17 @@ body {
 #app {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+
+  @include media-breakpoint-up(xs) {
+    grid-template-columns: 1% 95% 1%;
+  }
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   grid-template-areas: ". a .";
+  grid-gap: 10px;
 }
 
 .main {
